@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1 Anurag Pharmacy
+
+  .row
+    .col-12.col-lg-9
+      .row
+        .col-12.col-md-6
+          p.rating
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.far.fa-star
+            i.far.fa-star
+          p 1256 High Street, Reading, RG6 1PS
+
+          .card.card-primary
+            .card-block
+              h2.card-title Opening hours
+              p.card-text Monday - Friday : 7:00am - 7:00pm
+              p.card-text Saturday : 8:00am - 5:00pm
+              p.card-text Sunday : closed
+
+          .card.card-primary
+            .card-block
+              h2.card-title Facilities
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Hot drinks
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Food
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Premium wifi
+
+        .col-12.col-md-6.location-map
+          .card.card-primary
+            .card-block
+              h2.card-title Location map
+              img.img-fluid.rounded(src='https://www.google.com/maps/place/Anurag+University,+Hyderabad/@17.4200774,78.6560408,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNlkakqb3z7cLxdME914iI9mHIoWKAD3HQpY94h!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNlkakqb3z7cLxdME914iI9mHIoWKAD3HQpY94h%3Dw129-h86-k-no!7i4912!8i3256!4m7!3m6!1s0x3bcb76730bf4dccf:0x2ca84b53416f0abd!8m2!3d17.4200774!4d78.6560408!10e5!16s%2Fg%2F11b6xh_qcw?authuser=0&entry=ttu#')
+
+    .row
+      .col-12
+        .card.card-primary.review-card
+          .card-block
+            a.btn.btn-primary.float-right(href='/location/review/new') ➥ Add review
+            h2.card-title Customer reviews
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                  i.far.fa-star
+                span.review Author Simon Holmes
+                small.review Timestamp 16 February 2017
+              .col-12
+                p What a great place.
+
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                  i.far.fa-star
+                span.reviewAuthor Charlie Chaplin
+                small.reviewTimestamp 14 February 2017
+              .col-12
+                p It was okay. Coffee wasn't great.
+
+    .col-12.col-lg-3
+      p.lead
+        | Starcups is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done.
+      p
+        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
